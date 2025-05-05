@@ -6,6 +6,8 @@ import { CustomTable } from "@/components/CustomTable";
 import { WorkQueueTableCell } from "@/components/WorkQueueTableCell";
 import { MyAccountTableCell } from "@/components/MyAccountsTableCell";
 import { HomePageBox } from "./styles";
+import { QuickActions } from "@/components/QuickActions";
+import { MarketIntelligence } from "@/components/MarketIntelligence";
 
 const headData1 = [
   "originator",
@@ -51,6 +53,8 @@ export default function Home() {
           CustomTableCell={WorkQueueTableCell}
         />
       </div>
+      <QuickActions />
+      <MarketIntelligence />
       <div
         style={{
           marginTop: "30px",
@@ -58,6 +62,7 @@ export default function Home() {
           backgroundColor: "#1E2233",
           borderRadius: "15px",
           border: "1px solid #313B54",
+          maxWidth: "1656px",
         }}
       >
         <h1 style={{ marginBottom: "10px" }}>Table2</h1>

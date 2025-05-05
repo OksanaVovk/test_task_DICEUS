@@ -6,13 +6,6 @@ export const FlexBoxRow = styled.div`
   align-items: center;
 `;
 
-export const StatusBox = styled.div`
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 5px;
-`;
-
 export const AvatarBox = styled.div`
   margin-right: 10px;
 `;

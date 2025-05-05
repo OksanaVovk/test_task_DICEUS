@@ -11,13 +11,6 @@ export const FlexBoxRow = styled.div`
   }
 `;
 
-export const StatusBox = styled.div`
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin-right: 5px;
-`;
-
 export const Text1 = styled.p`
   font-size: 10px;
 `;

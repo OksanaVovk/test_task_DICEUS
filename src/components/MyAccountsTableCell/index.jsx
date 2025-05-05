@@ -2,13 +2,13 @@ import { StyledTableCell } from "../CustomTable";
 import {
   FlexBoxRow,
   Text1,
-  StatusBox,
   LossRatioBox,
   TriageBox,
   Text2,
 } from "./MyAccountsTableCellStyled";
 import { ButtonEdit } from "../ButtonEdit";
 import { WinnabilityBox } from "../WinnabilityBox";
+import { DotIndicator } from "../DotIndicator";
 
 export const MyAccountTableCell = ({ data }) => {
   return (
@@ -55,10 +55,9 @@ export const MyAccountTableCell = ({ data }) => {
       </StyledTableCell>
       <StyledTableCell align="left">
         <FlexBoxRow>
-          <StatusBox
-            style={{
-              background: data.status === "Active" ? "#3BB979" : "#1E40AF",
-            }}
+          <DotIndicator
+            background={data.status === "Active" ? "#3BB979" : "#1E40AF"}
+            marginRight={5}
           />
           <p>{data.status}</p>
         </FlexBoxRow>

@@ -2,7 +2,8 @@
 import { AvatarIcon } from "../AvatarIcon";
 import { SearchField } from "../SearchField";
 import {
-  HeaderBox,
+  HeaderLargeBox,
+  HeaderMiddleBox,
   HeaderSmallBox,
   HeaderSearchBox,
   HeaderAvatarBox,
@@ -11,19 +12,21 @@ import { useState } from "react";
 export const Header = () => {
   const [value, setValue] = useState("");
   return (
-    <HeaderBox>
-      <p>Hi Arthur, welcome! You have 12 open tasks.</p>
-      <HeaderSmallBox>
-        <HeaderSearchBox>
-          <SearchField
-            value={value}
-            onChange={(e) => setValue(e.target.value)}
-          />
-        </HeaderSearchBox>
-        <HeaderAvatarBox>
-          <AvatarIcon text="Arthur" />
-        </HeaderAvatarBox>
-      </HeaderSmallBox>
-    </HeaderBox>
+    <HeaderLargeBox>
+      <HeaderMiddleBox>
+        <p>Hi Arthur, welcome! You have 12 open tasks.</p>
+        <HeaderSmallBox>
+          <HeaderSearchBox>
+            <SearchField
+              value={value}
+              onChange={(e) => setValue(e.target.value)}
+            />
+          </HeaderSearchBox>
+          <HeaderAvatarBox>
+            <AvatarIcon text="Arthur" />
+          </HeaderAvatarBox>
+        </HeaderSmallBox>
+      </HeaderMiddleBox>
+    </HeaderLargeBox>
   );
 };

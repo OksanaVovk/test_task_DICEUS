@@ -1,12 +1,8 @@
 import { StyledTableCell } from "../CustomTable";
-import {
-  FlexBoxRow,
-  AvatarBox,
-  Text1,
-  StatusBox,
-} from "./WorkQueueTableCellStyled";
+import { FlexBoxRow, AvatarBox, Text1 } from "./WorkQueueTableCellStyled";
 import { ButtonEdit } from "../ButtonEdit";
 import { AvatarIcon } from "../AvatarIcon";
+import { DotIndicator } from "../DotIndicator";
 
 export const WorkQueueTableCell = ({ data }) => {
   return (
@@ -34,15 +30,15 @@ export const WorkQueueTableCell = ({ data }) => {
       <StyledTableCell align="left">{data.type}</StyledTableCell>
       <StyledTableCell align="left">
         <FlexBoxRow>
-          <StatusBox
-            style={{
-              background:
-                data.status === "New"
-                  ? "#3B82F6"
-                  : data.status === "Completed"
-                  ? "#3BB979"
-                  : "#FDD261",
-            }}
+          <DotIndicator
+            background={
+              data.status === "New"
+                ? "#3B82F6"
+                : data.status === "Completed"
+                ? "#3BB979"
+                : "#FDD261"
+            }
+            marginRight={5}
           />
           <p>{data.status}</p>
         </FlexBoxRow>

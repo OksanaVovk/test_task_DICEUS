@@ -1,18 +1,22 @@
 import styled from "@emotion/styled";
 
-export const HeaderBox = styled.div`
+export const HeaderLargeBox = styled.div`
+  border-bottom: 1px solid #313b54;
+  padding: 0 50px;
+  @media screen and (min-width: 1280px) {
+    padding: 0 132px;
+  }
+`;
+
+export const HeaderMiddleBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  width: 100%;
-  border-bottom: 1px solid #313b54;
-  padding: 0 50px;
-
+  max-width: 1656px;
   @media screen and (min-width: 1280px) {
     height: 94px;
-    padding: 0 132px;
   }
 `;
 
