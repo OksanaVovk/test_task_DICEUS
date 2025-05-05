@@ -7,8 +7,6 @@ export const StyledButton = styled.button`
   padding: 0 17px;
   border-radius: 50px;
   border: #313b54 1px solid;
-  // color: #3b82f6;
-  // background-color: transparent;
    background-color: ${({ $active }) => ($active ? "#3b82f6" : "transparent")};
   color: ${({ $active }) => ($active ? "#c5cad3" : "#3b82f6")};
   cursor: pointer;
@@ -23,7 +21,7 @@ export const StyledButton = styled.button`
 
 export const Text = styled.span`
   color: #c5cad3;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

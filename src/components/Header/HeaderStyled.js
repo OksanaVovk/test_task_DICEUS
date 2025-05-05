@@ -10,7 +10,7 @@ export const HeaderBox = styled.div`
   border-bottom: 1px solid #313b54;
   padding: 0 50px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     height: 94px;
     padding: 0 132px;
   }

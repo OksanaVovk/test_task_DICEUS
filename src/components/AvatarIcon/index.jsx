@@ -1,6 +1,6 @@
-import { AvatarBox } from "./AvatarStyled";
+import { AvatarBox } from "./AvatarIconStyled";
 
-export const Avatar = ({ text, width, height, fontSize = 16 }) => {
+export const AvatarIcon = ({ text, width, height, fontSize = 18 }) => {
   let avatarsText = "";
   const avatarArray = text.toUpperCase().split(" ");
 

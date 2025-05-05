@@ -1,5 +1,5 @@
 "use client";
-import { Avatar } from "../Avatar";
+import { AvatarIcon } from "../AvatarIcon";
 import { SearchField } from "../SearchField";
 import {
   HeaderBox,
@@ -21,7 +21,7 @@ export const Header = () => {
           />
         </HeaderSearchBox>
         <HeaderAvatarBox>
-          <Avatar text="Arthur" />
+          <AvatarIcon text="Arthur" />
         </HeaderAvatarBox>
       </HeaderSmallBox>
     </HeaderBox>
