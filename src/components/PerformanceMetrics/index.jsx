@@ -4,16 +4,16 @@ import { DiagramAccounts } from "../DiagramAccounts";
 import {
   ListBox,
   ItemBox,
+  ItemDiv,
   Item,
   Title,
   Text1,
   Text2,
   Text3,
   Text4,
-  FlexBox3,
-  FlexBox4,
-  FlexBox2,
-  FlexBox1,
+  TextBox,
+  RowBox,
+  PerformanceBox,
   GridBox,
 } from "./PerformanceMetricsStyled";
 
@@ -23,39 +23,39 @@ export const PerformanceMetrics = () => {
   }
 
   return (
-    <FlexBox1>
+    <PerformanceBox>
       <Title>Performance Metrics</Title>
       <GridBox>
-        <FlexBox3>
-          <FlexBox4>
-            <FlexBox2>
+        <ItemBox>
+          <TextBox>
+            <RowBox>
               <Text1>Winnability</Text1>
               <ListBox>
                 {[1, 2, 3, 4].map((item) => (
                   <Item key={item}>
-                    <ItemBox></ItemBox>
+                    <ItemDiv></ItemDiv>
                   </Item>
                 ))}
               </ListBox>
-            </FlexBox2>
+            </RowBox>
             <Text2>{data.winnability}</Text2>
-          </FlexBox4>
+          </TextBox>
           <LinkTo text="See all factors" />
-        </FlexBox3>
+        </ItemBox>
 
-        <FlexBox3>
-          <FlexBox4>
+        <ItemBox>
+          <TextBox>
             <Text1>Loss Ratio</Text1>
             <Text2>
               {data.LossRatio}
               <Text3> vs 42% target</Text3>
             </Text2>
-          </FlexBox4>
+          </TextBox>
           <LinkTo text="View history" />
-        </FlexBox3>
+        </ItemBox>
 
-        <FlexBox3>
-          <FlexBox4>
+        <ItemBox>
+          <TextBox>
             <Text1>Premium Growth</Text1>
             <Text2>
               {data.PremiumGrowth}
@@ -64,15 +64,15 @@ export const PerformanceMetrics = () => {
                 YoY increase<br></br>$123M vs $150M Target
               </Text3>
             </Text2>
-          </FlexBox4>
+          </TextBox>
           <LinkTo text="View trend" />
-        </FlexBox3>
+        </ItemBox>
 
-        <FlexBox3 style={{ gap: "10px", height: "190px", minHeight: "0px" }}>
+        <ItemBox style={{ gap: "10px", height: "190px", minHeight: "0px" }}>
           <Text1>Exposure Distribution</Text1>
           {data.ExposureDistribution?.length > 0 ? (
             data.ExposureDistribution.map((item) => (
-              <FlexBox2 key={item.name}>
+              <RowBox key={item.name}>
                 <DiagramAccounts
                   progress={item.percent}
                   height={22}
@@ -81,13 +81,13 @@ export const PerformanceMetrics = () => {
                 <Text4>
                   {item.name} {item.percent}%
                 </Text4>
-              </FlexBox2>
+              </RowBox>
             ))
           ) : (
             <p>Немає даних для розподілу</p>
           )}
-        </FlexBox3>
+        </ItemBox>
       </GridBox>
-    </FlexBox1>
+    </PerformanceBox>
   );
 };

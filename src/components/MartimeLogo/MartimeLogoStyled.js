@@ -7,7 +7,7 @@ export const ImageBox = styled.div`
 
 export const Title = styled.p`
   font-size: 24px;
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     font-size: 36px;
   }
 `;

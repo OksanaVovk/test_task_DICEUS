@@ -4,7 +4,7 @@ import Link from "next/link";
 export const PageBox = styled.div`
   padding: 20px 50px;
 
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     padding: 20px 100px;
   }
 `;

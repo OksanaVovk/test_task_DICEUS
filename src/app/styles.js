@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const HomePageBox = styled.div`
   padding: 20px 50px;
 
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     padding: 20px 100px;
   }
 `;
@@ -17,7 +17,7 @@ export const Box1 = styled.div`
   justify-content: space-between;
   gap: 20px;
 
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     display: flex;
     flex-direction: row;
     gap: 17px;

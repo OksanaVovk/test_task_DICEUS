@@ -12,7 +12,8 @@ export const FlexBoxLarge = styled.div`
   flex-direction: column;
   gap: 15px;
   margin-bottom: 25px;
-  @media screen and (min-width: 1550px) {
+  width: 100%;
+  @media screen and (min-width: 1500px) {
     flex-direction: row;
     gap: 8px;
   }

@@ -13,7 +13,7 @@ export const Item = styled.li`
   }
 `;
 
-export const ItemBox = styled.div`
+export const ItemDiv = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -22,7 +22,7 @@ export const ItemBox = styled.div`
 
 export const Title = styled.h1`
   font-size: 20px;
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     font-size: 32px;
   }
 `;
@@ -44,7 +44,7 @@ export const Text4 = styled.p`
   font-size: 16px;
 `;
 
-export const FlexBox3 = styled.div`
+export const ItemBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -59,7 +59,7 @@ export const FlexBox3 = styled.div`
   gap: 10px;
 `;
 
-export const FlexBox4 = styled.div`
+export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -67,7 +67,7 @@ export const FlexBox4 = styled.div`
   gap: 15px;
 `;
 
-export const FlexBox2 = styled.div`
+export const RowBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,13 +75,14 @@ export const FlexBox2 = styled.div`
   gap: 10px;
 `;
 
-export const FlexBox1 = styled.div`
+export const PerformanceBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   gap: 20px;
+  margin-bottom: 30px;
 `;
 
 export const GridBox = styled.div`
@@ -90,7 +91,7 @@ export const GridBox = styled.div`
   gap: 15px;
   width: 100%;
 
-  @media screen and (min-width: 1550px) {
+  @media screen and (min-width: 1500px) {
     grid-template-columns: auto auto auto 471px;
   }
 `;

@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/icons.svg#icon-marine-cargo",
+    "line": "Marine Cargo",
+    "premium": "625.000",
+    "date": "6/30/2026"
+  },
+  {
+    "icon": "/icons.svg#icon-general-liability",
+    "line": "General Liability",
+    "premium": "175.000",
+    "date": "6/30/2026"
+  },
+  {
+    "icon": "/icons.svg#icon-wokers-comp",
+    "line": "Workers Comp",
+    "premium": "75.000",
+    "date": "---"
+  },
+  {
+    "icon": "/icons.svg#icon-propety",
+    "line": "Prorety",
+    "premium": "64.829.83",
+    "date": "---"
+  },
+  {
+    "icon": "/icons.svg#icon-umbrella",
+    "line": "Umbrella",
+    "premium": "275.000",
+    "date": "13/03/2026"
+  }
+]

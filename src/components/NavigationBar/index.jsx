@@ -93,6 +93,8 @@ export const NavigationBar = () => {
     if (dir === "right") scrollRef.current.scrollLeft += amount;
   };
 
+  const basePath = "/" + pathname.split("/")[1];
+
   return (
     <Box>
       <ScrollBox ref={scrollRef}>
@@ -105,7 +107,7 @@ export const NavigationBar = () => {
                 onClick={() => {
                   router.push(button.path);
                 }}
-                isActive={pathname === button.path}
+                isActive={basePath === button.path}
               />
             </Item>
           ))}
