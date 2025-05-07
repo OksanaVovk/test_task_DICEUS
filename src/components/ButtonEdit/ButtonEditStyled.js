@@ -8,13 +8,11 @@ export const Button = styled.button`
   height: 24px;
   border-radius: 50%;
   border: none;
-//   border-color: #E5E7EB;
   color: #E5E7EB;
   &:hover,
   &:focus,
   &:active {
     color:  #3b82f6;
-    //   border-color: #3b82f6;
   
 `;
 

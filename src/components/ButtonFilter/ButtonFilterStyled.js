@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 export const StyledButton = styled.button`
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  height: 47px;
-  padding: 0 17px;
+  padding: 5px 10px;
   border-radius: 50px;
-  border: #313b54 1px solid;
-   background-color: ${({ $active }) => ($active ? "#3b82f6" : "#0C0F17")};
+  border: #3B82F6 1px solid;
+    width: ${({ width }) => (width ? `${width}px` : "100%")};
+  height: ${({ height }) => (height ? `${height}px` : "40px")};
+   background-color: ${({ $active }) => ($active ? "#3b82f6" : "transparent")};
   color: ${({ $active }) => ($active ? "#c5cad3" : "#3b82f6")};
   cursor: pointer;
   
@@ -22,14 +23,4 @@ export const StyledButton = styled.button`
 export const Text = styled.span`
   color: #c5cad3;
   font-size: 14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-`;
-
-export const StyledSvg = styled.svg`
-  width: 18px;
-  height: 18px;
-  color: currentColor;
-  margin-right: 10px;
 `;

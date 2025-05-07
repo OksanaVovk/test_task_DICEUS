@@ -11,5 +11,5 @@ export const AvatarBox = styled.div`
 `;
 
 export const Text1 = styled.p`
-  font-size: 10px;
+  font-size: 12px;
 `;

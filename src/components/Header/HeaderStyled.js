@@ -3,8 +3,8 @@ import styled from "@emotion/styled";
 export const HeaderLargeBox = styled.div`
   border-bottom: 1px solid #313b54;
   padding: 0 50px;
-  @media screen and (min-width: 1280px) {
-    padding: 0 132px;
+  @media screen and (min-width: 1550px) {
+    padding: 0 100px;
   }
 `;
 
@@ -15,7 +15,7 @@ export const HeaderMiddleBox = styled.div`
   justify-content: space-between;
   height: 64px;
   max-width: 1656px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1550px) {
     height: 94px;
   }
 `;
@@ -29,9 +29,9 @@ export const HeaderSmallBox = styled.div`
 
 export const HeaderSearchBox = styled.div`
   margin-right: 10px;
-  height: 38px;
-  width: 300px;
-  @media screen and (min-width: 1024px) {
+  height: 28px;
+  width: 280px;
+  @media screen and (min-width: 1550px) {
     height: 48px;
     width: 479px;
   }
@@ -40,8 +40,16 @@ export const HeaderSearchBox = styled.div`
 export const HeaderAvatarBox = styled.div`
   height: 38px;
   width: 38px;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1550px) {
     height: 48px;
     width: 48px;
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 20px;
+  color: #e5e7eb;
+  @media screen and (min-width: 1550px) {
+    font-size: 32px;
   }
 `;

@@ -5,12 +5,11 @@ export const Box = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 25px 23px 16px 23px;
+  padding: 25px 23px 110px 23px;
   background-color: #1e2233;
   border-radius: 15px;
   border: 1px solid #313b54;
   max-width: 285px;
-  min-height: 264px;
 `;
 
 export const Title = styled.h1`
@@ -20,16 +19,22 @@ export const Title = styled.h1`
   text-align: left;
   max-width: 240px;
 `;
-export const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+
+export const Text = styled.p`
+  font-size: 12px;
+  color: #e5e7eb;
+  margin-bottom: 10px;
+  text-align: left;
+  max-width: 240px;
+  text-transform: uppercase;
 `;
 
-export const Item = styled.li`
-  max-width: 240px;
-  &:not(:last-child) {
-    margin-bottom: 5px;
-  }
+export const ImageBox = styled.div`
+  max-width: 238px;
+  margin-bottom: 35px;
+`;
+
+export const GridBox = styled.div`
+  display: grid;
+  row-gap: 40px;
 `;

@@ -10,14 +10,15 @@ export const Box = styled.div`
   border-radius: 15px;
   border: 1px solid #313b54;
   max-width: 285px;
+  min-height: 272px;
 `;
 
 export const Title = styled.h1`
-  font-size: 18px;
+  font-size: 22px;
   color: #e5e7eb;
   margin-bottom: 21px;
   text-align: left;
-  width: 240px;
+  max-width: 240px;
 `;
 export const List = styled.ul`
   display: flex;
@@ -30,6 +31,8 @@ export const Item = styled.li`
   display: flex;
   flex-direction: row;
   line-height: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #313b54;
 
   &:not(:last-child) {
     margin-bottom: 24px;

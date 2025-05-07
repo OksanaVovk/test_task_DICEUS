@@ -7,6 +7,7 @@ import {
   HeaderSmallBox,
   HeaderSearchBox,
   HeaderAvatarBox,
+  Title,
 } from "./HeaderStyled";
 import { useState } from "react";
 export const Header = () => {
@@ -14,7 +15,7 @@ export const Header = () => {
   return (
     <HeaderLargeBox>
       <HeaderMiddleBox>
-        <p>Hi Arthur, welcome! You have 12 open tasks.</p>
+        <Title>Hi Arthur, welcome! You have 12 open tasks.</Title>
         <HeaderSmallBox>
           <HeaderSearchBox>
             <SearchField

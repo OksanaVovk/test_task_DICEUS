@@ -5,7 +5,7 @@ export const ButtonIcon = ({ icon, text, onClick, isActive }) => {
       <StyledSvg>
         <use href={icon} />
       </StyledSvg>
-      <Text> {text}</Text>
+      <Text>{text}</Text>
     </StyledButton>
   );
 };
