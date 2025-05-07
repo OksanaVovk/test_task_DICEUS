@@ -7,7 +7,7 @@ import { PortfolioGoals } from "@/components/PortfolioGoals";
 import { WorkQueueTable } from "@/components/WorkQueueTable";
 import { MyAccountTable } from "@/components/MyAccountsTable";
 
-export default function Home() {
+const Home = () => {
   return (
     <HomePageBox>
       <NavigationBar />
@@ -24,4 +24,6 @@ export default function Home() {
       <MyAccountTable />
     </HomePageBox>
   );
-}
+};
+
+export default Home;

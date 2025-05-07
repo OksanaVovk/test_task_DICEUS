@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Box, Title, Text, ImageBox, GridBox } from "./PortfolioGoalsStyled";
-import { DiagramDashboard } from "../Diagram";
+import { DiagramDashboard } from "../DiagramDashboard";
 import data from "../../data/target.json";
 
 export const PortfolioGoals = () => {

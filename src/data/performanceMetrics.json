@@ -1,0 +1,10 @@
+{
+  "winnability": "Very Strong",
+  "LossRatio": "25%",
+  "PremiumGrowth": "12.4%",
+  "ExposureDistribution": [
+    { "name": "Marine Cargo", "percent": 71.4 },
+    { "name": "General Liability", "percent": 20 },
+    { "name": "Workers Comp", "percent": 8.6 }
+  ]
+}

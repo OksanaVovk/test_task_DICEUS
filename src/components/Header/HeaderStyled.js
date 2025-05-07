@@ -48,7 +48,6 @@ export const HeaderAvatarBox = styled.div`
 
 export const Title = styled.h1`
   font-size: 20px;
-  color: #e5e7eb;
   @media screen and (min-width: 1550px) {
     font-size: 32px;
   }
