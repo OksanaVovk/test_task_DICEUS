@@ -15,6 +15,7 @@ import {
   ColumnBox,
   FlexBox1,
   RowBox1,
+  ButtonBox,
 } from "./WinnabilityStyled";
 
 export const Winnability = () => {
@@ -22,14 +23,14 @@ export const Winnability = () => {
     <div>
       <Title>Winnability</Title>
       <FlexBox1>
-        <ItemBox style={{ gridArea: "left" }}>
+        <ItemBox style={{ gridArea: "left", flex: 1 }}>
           <Text1>Overall Score</Text1>
           <RowBox1>
-            <Text1 style={{ fontSize: "42px" }}>{data.overallScore}</Text1>
+            <Text1 style={{ fontSize: "40px" }}>{data.overallScore}</Text1>
             <WinnabilityBox text={data.winnability} />
           </RowBox1>
         </ItemBox>
-        <ItemBox style={{ gridArea: "right" }}>
+        <ItemBox style={{ gridArea: "right", flex: 1 }}>
           <Text1>Historical trend</Text1>
           <Image
             src="/Graph_1x.webp"
@@ -44,8 +45,11 @@ export const Winnability = () => {
           <Text1>Position</Text1>
           {data.position.map((item) => (
             <RowBox1 key={item.name}>
-              <DiagramAccounts propress={item.percent} />
-              <Text2 isHighlighted={item.name === "Your score"}>
+              <DiagramAccounts progress={item.percent} height={20} />
+              <Text2
+                isHighlighted={item.name === "Your score"}
+                style={{ fontSize: "14px" }}
+              >
                 {item.name}: {item.percent}%
               </Text2>
             </RowBox1>
@@ -109,15 +113,15 @@ export const Winnability = () => {
               <Text2 isHighlighted>{item.title}</Text2>
               <Text2>{item.text}</Text2>
             </div>
-            <ButtonBackground
-              text="Applay"
-              bg="#3BB979"
-              cl="#1D2125"
-              clH="#1D2125"
-              bgH="#1D8852"
-              height={58}
-              width={177}
-            />
+            <ButtonBox>
+              <ButtonBackground
+                text="Applay"
+                bg="#3BB979"
+                cl="#1D2125"
+                clH="#1D2125"
+                bgH="#1D8852"
+              />
+            </ButtonBox>
           </RowBox2>
         ))}
       </ColumnBox>

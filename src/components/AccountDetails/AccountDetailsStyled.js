@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 export const Title = styled.h1`
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   @media screen and (min-width: 1500px) {
     font-size: 32px;
   }
@@ -18,8 +18,10 @@ export const TextBox = styled.p`
   width: 33px;
   height: 40px;
   background: #252a38;
+  padding: 2px
   font-size: 22px;
   border-radius: 10px;
+ flex-shrink: 0;
 `;
 
 export const RowBox = styled.div`
@@ -40,7 +42,6 @@ export const ColumnBox2 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   gap: 20px;
 `;
 
@@ -52,7 +53,7 @@ export const ColumnBox1 = styled.div`
   background-color: #252a3d;
   border-radius: 15px;
   gap: 30px;
-  max-width: 346px;
+  min-width: 200px;
 `;
 
 export const FlexBox2 = styled.div`
@@ -65,29 +66,33 @@ export const FlexBox2 = styled.div`
   @media screen and (min-width: 1500px) {
     flex-direction: column;
     align-items: stretch;
-    width: 100%;
-    gap: 5px;
+    max-width: 400px;
     margin-bottom: 0;
+    padding-right: 20px;
     border-right: 2px dashed #8a8b98;
   }
 `;
 
 export const FlexBox1 = styled.div`
   display: flex;
-      flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    gap: 30px;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 25px 30px;
+  background-color: #1e2233;
+  border-radius: 15px;
+  border: 1px solid #313b54;
+  width: 100%;
+  gap: 30px;
 
   @media screen and (min-width: 1500px) {
     flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 40px;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 20px;
 
- 
 `;
 
 export const Box = styled.div`
   margin-bottom: 25px;
+  width: 100%;
 `;

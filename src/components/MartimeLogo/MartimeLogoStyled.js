@@ -24,7 +24,6 @@ export const TextUpper = styled.p`
 export const FlexBox1 = styled.div`
   display: flex;
   flex-direction: row;
-
   gap: 20px;
 `;
 export const FlexBox2 = styled.div`

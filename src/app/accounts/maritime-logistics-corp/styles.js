@@ -19,7 +19,7 @@ export const FlexBox2 = styled.div`
   align-items: stretch;
   width: 100%;
   gap: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   @media screen and (min-width: 1500px) {
     flex-direction: row;
     gap: 20px;

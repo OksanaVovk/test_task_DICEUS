@@ -31,8 +31,7 @@ export const ItemBox = styled.div`
   padding: 25px 30px;
   background-color: #252a3d;
   border-radius: 15px;
-  min-height: 135px;
-  min-width: 300px;
+  min-width: 280px;
   gap: 5px;
 `;
 
@@ -79,6 +78,7 @@ export const RowBox2 = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
+  width: 100%
   }
 `;
 
@@ -93,6 +93,14 @@ export const FlexBox2 = styled.div`
     flex-direction: row;
     align-items: stretch;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 30px;
   }
+`;
+
+export const ButtonBox = styled.div`
+  height: 30px;
+  width: 100px;
+  @media screen and (min-width: 1500px) {
+    height: 58px;
+  width: 177px;
 `;
