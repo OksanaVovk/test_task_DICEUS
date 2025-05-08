@@ -9,6 +9,7 @@ import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { Policies } from "@/components/Policies";
 import { AccountsStatus } from "@/components/AccountStatus";
 import { ComplianceDocumentation } from "@/components/ComplianceDocumentation";
+import { AccountDetails } from "@/components/AccountDetails/insex";
 
 const MartimePage = () => {
   return (
@@ -25,6 +26,7 @@ const MartimePage = () => {
         <AccountsStatus />
         <ComplianceDocumentation />
       </FlexBox2>
+      <AccountDetails />
     </PageBox>
   );
 };

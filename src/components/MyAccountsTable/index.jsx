@@ -1,5 +1,6 @@
 import { ButtonFilter } from "../ButtonFilter";
-import { ButtonBlue } from "../ButtonBlue";
+
+import { ButtonBackground } from "../ButtonBackground";
 import tableData from "../../data/myAccounts.json";
 import { CustomTable } from "../CustomTable";
 import { MyAccountTableCell } from "../MyAccountsTableCell";
@@ -39,7 +40,7 @@ export const MyAccountTable = () => {
           <ButtonFilter width={99} height={27} text="Filter" />
           <ButtonFilter width={99} height={27} text="Sort" />
           <ButtonFilter width={99} height={27} text="Group" />
-          <ButtonBlue text="+ New" width={100} height={28} />
+          <ButtonBackground text="+ New" width={100} height={28} />
         </FlexBox>
       </FlexBoxLarge>
       <CustomTable

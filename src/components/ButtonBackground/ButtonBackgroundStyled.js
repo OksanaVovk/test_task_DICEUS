@@ -9,14 +9,15 @@ export const StyledButton = styled.button`
   height: ${({ height }) => (height ? `${height}px` : "40px")};
   border-radius: 50px;
  
-  background-color: #3B82F6;
-  color: #ffffff;
+  background-color:${({ bg }) => (bg ? `${bg}` : " #3B82F6")};
+  color: ${({ cl }) => (cl ? `${cl}` : " #ffffff")};
   cursor: pointer;
   
   &:hover,
   &:focus,
   &:active {
-   background-color:rgb(24, 88, 192);
+   background-color:${({ bgH }) => (bgH ? `${bgH}` : "rgb(24, 88, 192)")};
+    color:${({ clH }) => (clH ? `${clH}` : " #ffffff")};
 
 
 `;

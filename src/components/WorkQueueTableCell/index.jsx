@@ -17,7 +17,6 @@ export const WorkQueueTableCell = ({ data }) => {
               fontSize={13}
             />
           </AvatarBox>
-
           <p> {data.originator}</p>
         </FlexBoxRow>
       </StyledTableCell>

@@ -1,0 +1,34 @@
+{
+  "winnability": "Very Strong",
+  "overallScore": "82%",
+  "desicionSupport": 4,
+  "risk": 6,
+  "documents": 2,
+  "position": [
+    { "name": "You score", "percent": 82 },
+    { "name": "Market Avg", "percent": 68 },
+    { "name": "Top competition", "percent": 88 }
+  ],
+  "increasing": [
+    { "name": "Brokers relationship", "percent": 28 },
+    { "name": "Loss history", "percent": 22 },
+    { "name": "Industry growth", "percent": 16 },
+    { "name": "Multiline opportunity", "percent": 11 }
+  ],
+  "decreasing": [
+    { "name": "Premium pricing", "percent": 24 },
+    { "name": "Total exposure", "percent": 18 },
+    { "name": "Loss ratio trend", "percent": 13 },
+    { "name": "Market competition", "percent": 5 }
+  ],
+  "recommendations": [
+    {
+      "title": "Over 5% premium in exchange for 3-year commitment",
+      "text": "Historical win rate increases 24% with multi-year commitments. Current pricing is 12% above market average. This approach would strengthen retention while maintaining adequate profitability."
+    },
+    {
+      "title": "Propose risk control services for cargo handling procedures",
+      "text": "Can potentially reduce loss ratio by 15-20% based on similar martime accounts in your portfolio. Specific focus on loading/unloading operations would address the most frequent claim scenarios."
+    }
+  ]
+}

@@ -15,8 +15,15 @@ export const FlexBox1 = styled.div`
 
 export const FlexBox2 = styled.div`
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: stretch;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 25px;
+  @media screen and (min-width: 1500px) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
 `;

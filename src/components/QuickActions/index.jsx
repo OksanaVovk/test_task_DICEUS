@@ -1,4 +1,4 @@
-import { ButtonBlue } from "../ButtonBlue";
+import { ButtonBackground } from "../ButtonBackground";
 import { Box, Title, List, Item } from "./QuickActionsStyled";
 const buttons = [
   "New Submission",
@@ -14,7 +14,7 @@ export const QuickActions = () => {
       <List>
         {buttons.map((button, index) => (
           <Item key={index}>
-            <ButtonBlue text={button} width={240} />
+            <ButtonBackground text={button} width={240} />
           </Item>
         ))}
       </List>

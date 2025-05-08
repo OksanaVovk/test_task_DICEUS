@@ -10,6 +10,7 @@ export const Box = styled.div`
 export const FlexBoxLarge = styled.div`
   display: flex;
   flex-direction: column;
+
   gap: 15px;
   margin-bottom: 25px;
   width: 100%;
