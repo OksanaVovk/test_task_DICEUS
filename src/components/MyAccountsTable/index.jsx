@@ -1,5 +1,4 @@
 import { ButtonFilter } from "../ButtonFilter";
-
 import { ButtonBackground } from "../ButtonBackground";
 import tableData from "../../data/myAccounts.json";
 import { CustomTable } from "../CustomTable";

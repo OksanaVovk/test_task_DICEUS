@@ -11,6 +11,7 @@ import { AccountsStatus } from "@/components/AccountStatus";
 import { ComplianceDocumentation } from "@/components/ComplianceDocumentation";
 import { AccountDetails } from "@/components/AccountDetails";
 import { Communication } from "@/components/Communication";
+import { PoliciesTable } from "@/components/PoliciesTable";
 
 const MartimePage = () => {
   return (
@@ -29,6 +30,7 @@ const MartimePage = () => {
       </FlexBox2>
       <AccountDetails />
       <Communication />
+      <PoliciesTable />
     </PageBox>
   );
 };
