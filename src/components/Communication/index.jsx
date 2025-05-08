@@ -17,7 +17,7 @@ import { ButtonFilter } from "../ButtonFilter";
 
 export const Communication = () => {
   return (
-    <div>
+    <div style={{ marginBottom: "30px" }}>
       <Title>Communication</Title>
       <ColumnBox
         style={{

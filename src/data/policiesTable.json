@@ -2,7 +2,7 @@
   {
     "line": "Marine Cargo",
     "id": 17030212,
-    "icon": "/icons.svg#icon-marine-cargo",
+    "icon": "/icons.svg#icon-table-marine",
     "EFFdate": "6/30/2026",
     "EXRdate": "6/30/2027",
     "status": "Active",
@@ -17,7 +17,7 @@
   {
     "line": "General Liability",
     "id": 4631092,
-    "icon": "/icons.svg#icon-general-liability",
+    "icon": "/icons.svg#icon-table-general-umbrella",
     "EFFdate": "6/30/2026",
     "EXRdate": "6/30/2027",
     "status": "Active",
@@ -32,7 +32,7 @@
   {
     "line": "Workers Comp",
     "id": 9182371,
-    "icon": "/icons.svg#icon-wokers-comp",
+    "icon": "/icons.svg#icon-table-workers",
     "EFFdate": "Pending",
     "EXRdate": "Pending",
     "status": "Pending",
@@ -47,7 +47,7 @@
   {
     "line": "Umbrella",
     "id": 527436,
-    "icon": "/icons.svg#icon-umbrella",
+    "icon": "/icons.svg#icon-table-general-umbrella",
     "EFFdate": "13/03/2026",
     "EXRdate": "13/03/2027",
     "status": "Active",

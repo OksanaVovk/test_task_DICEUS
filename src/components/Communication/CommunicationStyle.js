@@ -38,6 +38,7 @@ export const RowBox = styled.div`
 export const StyledSvg = styled.svg`
   width: 12px;
   height: 13px;
+  color: #e5e7eb;
 `;
 
 export const StyledButton = styled.button`

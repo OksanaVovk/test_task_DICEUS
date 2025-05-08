@@ -26,7 +26,7 @@ export const StyledTableCell = styled(TableCell)(() => ({
   },
 }));
 
-const StyledTableRow = styled(TableRow)(() => ({
+export const StyledTableRow = styled(TableRow)(() => ({
   "&:nth-of-type(odd)": {
     backgroundColor: "transparent",
   },
@@ -38,7 +38,12 @@ const StyledTableRow = styled(TableRow)(() => ({
   },
 }));
 
-export const CustomTable = ({ headData, CustomTableCell, tableData }) => {
+export const CustomTable = ({
+  headData,
+  CustomTableCell,
+  tableData,
+  CustomTableTotal,
+}) => {
   return (
     <TableContainer
       component={Paper}
@@ -68,6 +73,7 @@ export const CustomTable = ({ headData, CustomTableCell, tableData }) => {
               <CustomTableCell data={dataItem} />
             </StyledTableRow>
           ))}
+          {CustomTableTotal && <CustomTableTotal data={tableData} />}
         </TableBody>
       </Table>
     </TableContainer>
