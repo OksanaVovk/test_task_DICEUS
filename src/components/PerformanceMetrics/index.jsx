@@ -4,6 +4,7 @@ import { DiagramAccounts } from "../DiagramAccounts";
 import {
   ListBox,
   ItemBox,
+  ItemBox1,
   ItemDiv,
   Item,
   Title,
@@ -25,7 +26,7 @@ export const PerformanceMetrics = () => {
   return (
     <PerformanceBox>
       <Title>Performance Metrics</Title>
-      <GridBox>
+      <GridBox style={{ overflowX: "auto", width: "100%" }}>
         <ItemBox>
           <TextBox>
             <RowBox>
@@ -68,7 +69,7 @@ export const PerformanceMetrics = () => {
           <LinkTo text="View trend" />
         </ItemBox>
 
-        <ItemBox style={{ gap: "10px", height: "190px", minHeight: "0px" }}>
+        <ItemBox1>
           <Text1>Exposure Distribution</Text1>
           {data.ExposureDistribution?.length > 0 ? (
             data.ExposureDistribution.map((item) => (
@@ -76,7 +77,7 @@ export const PerformanceMetrics = () => {
                 <DiagramAccounts
                   progress={item.percent}
                   height={22}
-                  width={234}
+                  width={190}
                 />
                 <Text4>
                   {item.name} {item.percent}%
@@ -86,7 +87,7 @@ export const PerformanceMetrics = () => {
           ) : (
             <p>Немає даних для розподілу</p>
           )}
-        </ItemBox>
+        </ItemBox1>
       </GridBox>
     </PerformanceBox>
   );

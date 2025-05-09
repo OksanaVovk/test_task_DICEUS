@@ -28,8 +28,12 @@ export const AccountDetails = () => {
             </RowBox>
             <ColumnBox2>
               <Text2 style={{ color: "#3B82F6" }}>Winnability</Text2>
-              <Text2>Exposure Review & Suggested Covarage</Text2>
-              <Text2>Portfolio Strategy Alignment</Text2>
+              <Text2 style={{ lineHeight: "25px" }}>
+                Exposure Review & Suggested Covarage
+              </Text2>
+              <Text2 style={{ lineHeight: "25px" }}>
+                Portfolio Strategy Alignment
+              </Text2>
               <Text2>Briker Analytics</Text2>
             </ColumnBox2>
           </ColumnBox1>

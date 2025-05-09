@@ -10,6 +10,7 @@ export const Box = styled.div`
   border-radius: 15px;
   border: 1px solid #313b54;
   max-width: 285px;
+  min-width: 260px;
 `;
 
 export const Title = styled.h1`
@@ -30,8 +31,12 @@ export const Text = styled.p`
 `;
 
 export const ImageBox = styled.div`
-  max-width: 238px;
+  width: 100%;
   margin-bottom: 35px;
+  @media screen and (min-width: 1500px) {
+  min-width: 210px;
+    max-width: 238px;
+ 
 `;
 
 export const GridBox = styled.div`

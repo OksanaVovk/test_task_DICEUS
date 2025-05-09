@@ -11,9 +11,9 @@ export const WorkQueueTable = () => {
     <Box>
       <Title>WorkQueue</Title>
       <FlexBox>
-        <ButtonBlack text="Assigned to me" isActive={true} />
-        <ButtonBlack text="Pending Review" />
-        <ButtonBlack text="Referrals" />
+        <ButtonBlack text="Assigned to me (12)" isActive={true} />
+        <ButtonBlack text="Pending Review (8)" />
+        <ButtonBlack text="Referrals (3)" />
       </FlexBox>
       <CustomTable
         headData={headData}

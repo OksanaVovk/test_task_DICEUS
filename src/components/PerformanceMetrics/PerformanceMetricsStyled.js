@@ -53,10 +53,29 @@ export const ItemBox = styled.div`
   background-color: #1e2233;
   border-radius: 15px;
   border: 1px solid #313b54;
-  min-height: 239px;
-
   width: 100%;
+  height: 190px;
   gap: 10px;
+  @media screen and (min-width: 1500px) {
+    min-height: 239px;
+  }
+`;
+
+export const ItemBox1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 27px 20px 27px;
+  background-color: #1e2233;
+  border-radius: 15px;
+  border: 1px solid #313b54;
+  gap: 10px;
+  height: 190px;
+  min-height: 0;
+  @media screen and (min-width: 1500px) {
+    height: 190px;
+  }
 `;
 
 export const TextBox = styled.div`
@@ -87,11 +106,27 @@ export const PerformanceBox = styled.div`
 
 export const GridBox = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 350px 350px 350px 471px;
   gap: 15px;
-  width: 100%;
+  width: max-content;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 transparent;
 
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #3b82f6;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
   @media screen and (min-width: 1500px) {
-    grid-template-columns: auto auto auto 471px;
+    grid-template-columns: auto auto auto auto;
+    overflow-x: unset;
   }
 `;

@@ -11,6 +11,9 @@ export const Box = styled.div`
   border: 1px solid #313b54;
   max-width: 285px;
   min-height: 264px;
+  @media screen and (min-width: 1500px) {
+    min-width: 260px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -18,7 +21,6 @@ export const Title = styled.h1`
   color: #e5e7eb;
   margin-bottom: 28px;
   text-align: left;
-  max-width: 240px;
 `;
 export const List = styled.ul`
   display: flex;
@@ -28,6 +30,7 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
+  min-width: 210px;
   max-width: 240px;
   &:not(:last-child) {
     margin-bottom: 5px;

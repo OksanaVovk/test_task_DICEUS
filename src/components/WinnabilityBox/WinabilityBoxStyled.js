@@ -10,6 +10,7 @@ export const FlexBoxRow = styled.div`
   color: #3b82f6;
   padding: 2px 5px;
   justify-content: space-between;
+  font-size: 14px;
   & > p {
     white-space: nowrap;
     flex-shrink: 0;

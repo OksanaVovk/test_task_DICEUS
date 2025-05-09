@@ -14,7 +14,7 @@ export const QuickActions = () => {
       <List>
         {buttons.map((button, index) => (
           <Item key={index}>
-            <ButtonBackground text={button} width={240} />
+            <ButtonBackground text={button} />
           </Item>
         ))}
       </List>

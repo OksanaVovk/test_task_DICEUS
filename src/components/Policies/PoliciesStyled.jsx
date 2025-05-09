@@ -13,7 +13,7 @@ export const PoliciesBox = styled.div`
 export const FlexBox = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   padding: 34px 19px;
   background-color: #1e2233;

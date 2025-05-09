@@ -1,4 +1,4 @@
-import { FlexBoxRow, Item, ItemBox, ListBox } from "./WinabilityBoxDtyled";
+import { FlexBoxRow, Item, ItemBox, ListBox } from "./WinabilityBoxStyled";
 export const WinnabilityBox = ({ text }) => {
   return (
     <FlexBoxRow>

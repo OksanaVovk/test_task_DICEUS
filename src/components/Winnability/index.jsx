@@ -30,8 +30,10 @@ export const Winnability = () => {
             <WinnabilityBox text={data.winnability} />
           </RowBox1>
         </ItemBox>
-        <ItemBox style={{ gridArea: "right", flex: 1 }}>
-          <Text1>Historical trend</Text1>
+        <ItemBox
+          style={{ gridArea: "right", flex: 1, justifyContent: "flex-start" }}
+        >
+          <Text1 style={{ marginBottom: "25px" }}>Historical trend</Text1>
           <Image
             src="/Graph_1x.webp"
             alt="graph"
@@ -45,7 +47,11 @@ export const Winnability = () => {
           <Text1>Position</Text1>
           {data.position.map((item) => (
             <RowBox1 key={item.name}>
-              <DiagramAccounts progress={item.percent} height={20} />
+              <DiagramAccounts
+                progress={item.percent}
+                height={20}
+                width={190}
+              />
               <Text2
                 isHighlighted={item.name === "Your score"}
                 style={{ fontSize: "14px" }}

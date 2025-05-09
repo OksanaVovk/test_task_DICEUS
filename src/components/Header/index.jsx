@@ -1,4 +1,5 @@
 "use client";
+import data from "../../data/mainData.json";
 import { AvatarIcon } from "../AvatarIcon";
 import { SearchField } from "../SearchField";
 import {
@@ -15,7 +16,9 @@ export const Header = () => {
   return (
     <HeaderLargeBox>
       <HeaderMiddleBox>
-        <Title>Hi Arthur, welcome! You have 12 open tasks.</Title>
+        <Title>
+          Hi {data.user}, welcome! You have {data.openTasks} open tasks.
+        </Title>
         <HeaderSmallBox>
           <HeaderSearchBox>
             <SearchField

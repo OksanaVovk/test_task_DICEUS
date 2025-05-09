@@ -5,6 +5,10 @@ export const DiagramLargeBox = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  @media screen and (min-width: 1500px) {
+    max-width: 210px;
+    min-width: 170px;
+  }
 `;
 
 export const Diagram = styled.div`

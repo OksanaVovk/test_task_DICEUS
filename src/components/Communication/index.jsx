@@ -30,7 +30,6 @@ export const Communication = () => {
           <SearchBox>
             <SearchField background="#232838" />
           </SearchBox>
-
           <ButtonFilter width={99} height={27} text="Filter" />
           <ButtonFilter width={99} height={27} text="Group" />
         </RowBox>

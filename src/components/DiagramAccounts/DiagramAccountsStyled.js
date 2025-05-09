@@ -19,4 +19,5 @@ export const GradientBox = styled.div`
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   background: linear-gradient(to right, #313853, #3b82f6);
+  flex-grow: 1;
 `;
