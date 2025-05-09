@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📄 **PROJECT DESCRIPTION**
 
-## Getting Started
+This project is a responsive and interactive web application built to visualize and display user-related data. It includes features like modals, dynamic UI components, and custom visual diagrams.
 
-First, run the development server:
+🛠️ **TECHNOLOGIES USED**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** – React framework for server-side rendering and routing
+- **React** – UI library
+- **Emotion Styled Components** – CSS-in-JS styling
+- **Context API** – state management for modal windows
+- **createPortal** – React DOM for rendering modals outside the main DOM hierarchy
+- **HTML/CSS** – layout and responsive design
+- **JavaScript (ES6+)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🤖 **AI TOOLS USED**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **ChatGPT** – for generating boilerplate code, debugging, and explaining React hook rules
+- **Figma** – for UI design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧪 **OPTIMIZATION TOOLS**
 
-## Learn More
+- **SVG Sprite Generation:**  
+  Icons were combined into a single sprite using [IcoMoon](https://icomoon.io/app) — a convenient tool for creating and managing SVG sprites.
 
-To learn more about Next.js, take a look at the following resources:
+- **SVG Optimization:**  
+  The generated sprite was optimized with [SVGOMG](https://jakearchibald.github.io/svgomg/) — an online tool that reduces SVG file size without quality loss.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Image Compression:**  
+  Images were compressed using [Squoosh](https://squoosh.app), which significantly reduces the size of PNG, JPEG, WebP files while preserving visual quality.
