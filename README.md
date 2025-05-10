@@ -7,6 +7,7 @@ This project is a responsive and interactive web application built to visualize 
 - **Next.js** – React framework for server-side rendering and routing
 - **React** – UI library
 - **Emotion Styled Components** – CSS-in-JS styling
+- **MUI (Material UI)** – a component library for building responsive user interfaces.
 - **Context API** – state management for modal windows
 - **createPortal** – React DOM for rendering modals outside the main DOM hierarchy
 - **HTML/CSS** – layout and responsive design
